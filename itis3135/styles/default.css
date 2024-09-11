@@ -36,8 +36,8 @@ ul {
     font-size: 14px;
 }
 figure {
-    height: 300px;
-    width: 600px;
+    height: auto;
+    width: 80%;
     margin: auto;
     padding: 5px;
     display: block;
