@@ -35,12 +35,11 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
 }
 figure {
-    padding: 0px;
-    height: 220px;
-    width: 500px;
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    padding: 5px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
