@@ -9,14 +9,18 @@
     </head>
     <body>
         <header>
-            <div data-include="header.html"></div>
+            <div data-include="components/header.html"></div>
         </header>
+        <main>
+            <h2>Welcome to my page! </h2>
+            <img src="images/cinnamoroll_png_by_carolinachocofreak_d64a5uz-fullview.png" alt="Ashley Blanton">
+        </main>
         <footer>
-            <div data-include="footer.html"></div>
+            <div data-include="components/footer.html"></div>
         </footer>
        <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
        </script>
        <script src="scripts/HTMLInclude.min.js"></script>
     </body>
