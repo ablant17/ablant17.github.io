@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAPPY WEBSTIE</title>
+    <style>
+        .big-border {
+            border-top: 5px solid red;
+            border-right: 10px dashed blue;
+            border-bottom: 15px dotted green;
+            border-left: 20px double purple;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .big-text {
+            font-size: 50px;
+            color: black;
+            font-family: Papyrus;
+        }
+
+        .comic-text {
+            font-family: Comic Sans MS;
+            font-size: 20px;
+        }
+
+        .times-text {
+            font-family: Times New Roman;
+        }
+
+        .weird-background {
+            background-color: yellow;
+            color: lightgray;
+        }
+
+        .poor-contrast {
+            background-color: lightgray;
+            color: white;
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <h2 class="big-text centered">Really Big Useless Header</h2>
+
+    <h1 class="comic-text centered">Smaller Heading Below the Big One</h1>
+
+    <p class="big-border centered">
+        <marquee>The Tesla Cybertruck is an all-electric, battery-powered light-duty truck unveiled by Tesla, INC. Here is a comprehensive overview of its <span class="underlined">key feautures</span> and specifications.</marquee>
+    </p>
+
+    <ul class="centered">
+        <li class="weird-background">Exterior: </li>
+       <ul>
+           <li>The cybertruck has a distinctive, angular, stainless steel exoskeleton design for durability and passenger protection. It features ultra-hard 30X cold-rolled steel and armored glass.</li>
+       </ul>
+        <li class="weird-background">Dimensions: </li>
+        <ul>
+            <li>Approximately 231.7 inches long, 79.8 inches wide, and 75 inches tall, with a 6.5-foot cargo bed.</li>
+        </ul>
+        <li class="weird-background">Performance and Variants: </li>
+        <ul>
+            <li>Single Motor RWD: </li>
+            <li>0-60 MPH: ~6.5 seconds</li>
+            <li>Range:</li>
+            <li>~250 miles</li>
+            <li>Towing Capacity: 7,500 pounds</li>
+            <li>Dual Motor AWD:</li>
+            <li>0-60MPH: ~4.5 seconds</li>
+            <li>Range:</li>
+            <li>~300 miles</li>
+            <li>Towing Capacity:</li>
+            <li>~10,000 pounds</li>
+            
+        </ul>
+    </ul>
+
+    <img src="images/whatHUHwhathuhWHAAhuhHUHwhaWHAhuh" alt="IMAGE" width="400" height="400">
+    <h4>VACATION WITH MY MAWMAW.</h4>
+
+    <p class="times-text">Here's a <span class="underlined">Times New Roman</span> font that looks terrible. Who even likes this font?</p>
+
+    <a href="https://uquiz.com/quiz/F5jgh7/which-stereotypical-american-bully-phrase-are-you" class="underlined">CLICK THIS TO WIN A FREE MACBOOK!!!!!!!!!!!!!!!</a>
+    <br><br>
+    <button onclick="createPopups()">Click HERE to claim your prize!!!!</button>
+
+    <br><br><br> 
+    <br><br>
+    <p class="poor-contrast">if you can read this text <span class="underlined">i am not resposible for your actions</span></p>
+</body>
+<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert("awww can someone not right click anymore? :(");
+    });
+</script>
+<script>
+    function createPopups() {
+        for (let i = 0; i < 20; i++) {  
+            setTimeout(function() {
+                alert("WINNER!!!");
+            }, i * 1000); 
+        }
+    }
+</script>
+
+</html>
