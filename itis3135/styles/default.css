@@ -48,8 +48,10 @@ a:link {
     color: #ff1493;
   }
   table {
-    width: 100%;
+    width: 50%;
     border-collapse: collapse;
+    max-width: 900px;
+    
 }
 th, td {
     border: 1px solid #940099;
@@ -72,7 +74,7 @@ caption {
     margin-bottom: 10px;
 }
 figure {
-    margin: 20px 0;
+    margin: 5px 0;
 }
 
 nav ul {
