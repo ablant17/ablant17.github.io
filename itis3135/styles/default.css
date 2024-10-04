@@ -47,6 +47,50 @@ a:link {
   a:active {
     color: #ff1493;
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #940099;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #552162;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #b898d3;
+}
+tr:nth-child(odd) {
+    background-color: #eedbfbd6;
+}
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+figure {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
   
 
 
