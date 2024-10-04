@@ -16,6 +16,10 @@ h1, h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
 footer {
     text-align: center;
 }
@@ -34,6 +38,17 @@ figcaption {
 ul {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    text-align: left;
+    list-style-position: inside;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    width: 70%;
+}
+ul ul { 
+    margin-left: 20px; 
+    width: auto; 
+    text-align: left; 
 }
 a:link {
     color: #552162;
@@ -51,6 +66,7 @@ a:link {
     width: 50%;
     border-collapse: collapse;
     max-width: 900px;
+    margin: 20px auto 40px
     
 }
 th, td {
@@ -76,7 +92,6 @@ caption {
 figure {
     margin: 5px 0;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -89,8 +104,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
-nav ul li a:hover {
-    text-decoration: underline;
+ol {
+    text-align: left;
+    list-style-position: inside;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    width: fit-content;
+
 }
 
   
