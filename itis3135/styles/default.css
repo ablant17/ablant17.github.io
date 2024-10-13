@@ -166,12 +166,12 @@ main {
 }
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
-        background-color: yellow;
+        background-color: #e6e6fa;
     }
 }
 @media screen and (min-width: 601px) and (max-width: 980px) {
     #colorbox {
-        background-color: orange;
+        background-color: #ffb6c1;
     }
     main {
         width: 95%;
@@ -179,7 +179,7 @@ main {
 }
 @media screen and (min-width: 370px) and (max-width: 600px) {
     #colorbox {
-        background-color: red;
+        background-color: #add8e6;
     }
     main {
         width: 100%;
