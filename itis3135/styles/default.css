@@ -45,28 +45,27 @@ ul {
     text-align: left;
     list-style-position: inside;
     margin: 0 auto;
-    text-align: left;
     padding: 0;
     width: 70%;
 }
-ul ul { 
-    margin-left: 20px; 
-    width: auto; 
-    text-align: left; 
+ul ul {
+    margin-left: 20px;
+    width: auto;
+    text-align: left;
 }
 a:link {
     color: #552162;
-  }
-  a:visited {
+}
+a:visited {
     color: #343232;
-  }
-  a:hover {
+}
+a:hover {
     color: #ff69b4;
-  }
-  a:active {
+}
+a:active {
     color: #ff1493;
-  }
-  table {
+}
+table {
     width: 50%;
     border-collapse: collapse;
     max-width: 900px;
@@ -113,10 +112,8 @@ ol {
     text-align: left;
     list-style-position: inside;
     margin: 0 auto;
-    text-align: left;
     padding: 0;
     width: fit-content;
-
 }
 form {
     background-color: #a99cc3d6;
@@ -134,30 +131,25 @@ input[type="tel"],
 input[type="email"],
 select {
     width: 100%;
-    margin: left; 
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-bottom: 10px;
-    margin-top: 10px;
     box-sizing: border-box;
 }
 input[type="submit"],
 input[type="reset"] {
-    background-color: #552162; 
-    color: white; 
+    background-color: #552162;
+    color: white;
     padding: 10px 20px;
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #ff69b4; 
-    
+    background-color: #ff69b4;
 }
 label {
     margin-top: 10px;
@@ -165,6 +157,33 @@ label {
 }
 fieldset {
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: yellow;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    #colorbox {
+        background-color: orange;
+    }
+    main {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    #colorbox {
+        background-color: red;
+    }
+    main {
+        width: 100%;
+    }
+}
+
 
