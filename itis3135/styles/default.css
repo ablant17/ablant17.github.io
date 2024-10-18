@@ -10,15 +10,27 @@ body {
     padding: 10px;
     margin: 10px;
 }
-h1, h2 {
+h1 {
     text-align: center;
     color: #b898d3;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
+h2 {
+    text-align: left;
+    color: #b898d3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
 h3 {
     text-align: center;
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4 {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 footer {
     text-align: center;
@@ -43,10 +55,14 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-align: left;
-    list-style-position: inside;
-    margin: 0 auto;
+    width: 100%;
+}
+ul li {
+    margin-bottom: 10px;
+    text-align: left;
     padding: 0;
-    width: 70%;
+    width: 100%;
+    list-style-type: none;
 }
 ul ul {
     margin-left: 20px;
@@ -129,7 +145,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 select {
-    width: 100%;
+    width: 50%;
     padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -153,6 +169,8 @@ input[type="reset"]:hover {
 label {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: inline-block;
+    
 }
 fieldset {
     margin-bottom: 20px;
