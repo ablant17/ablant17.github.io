@@ -121,7 +121,7 @@ nav ul li {
     margin: 0 10px;
 }
 nav ul li a {
-    color: white;
+    color: rgb(49, 3, 3);
     text-decoration: none;
 }
 ol {
@@ -181,9 +181,10 @@ main {
     margin: 0 auto;
     text-align: center;
 }
+
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
-        background-color: #e6e6fa;
+        background-color: #171732;
     }
 }
 @media screen and (min-width: 601px) and (max-width: 980px) {
