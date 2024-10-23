@@ -17,7 +17,7 @@ h1 {
     font-size: 30px;
 }
 h2 {
-    text-align: left;
+    text-align: center;
     color: #b898d3;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
@@ -133,25 +133,20 @@ ol {
 }
 form {
     background-color: #a99cc3d6;
-    border-radius: 5%;
-    width: 80%;
     max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding: 20px;
+    margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 select {
-    width: 50%;
-    padding: 12px;
+    width: 100%;
+    max-width: 800px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     margin-bottom: 10px;
-    box-sizing: border-box;
+    display: flexbox;
 }
 input[type="submit"],
 input[type="reset"] {
@@ -166,11 +161,14 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
     background-color: #ff69b4;
 }
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #552162;
+}
 label {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline-block;
-    
+    font-size: 16px; 
+    margin-bottom: 5px; 
+    display: flexbox;
 }
 fieldset {
     margin-bottom: 20px;
@@ -180,6 +178,14 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+.response {
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #1e022a; 
+    background-color: #a99cc3d6; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 981px) and (max-width: 1400px) {
