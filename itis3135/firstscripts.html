@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>First Scripts - Adroit Bunny</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/defaultScripts.js"></script>
+        <script src="scripts/brandFunctions.js"></script>
+        <script src="scripts/dateTime.js"></script>
+        <script src="scripts/formHandler.js"></script>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>First Scripts Page</h2>
+            <h3 id="time-display"></h3>
+            <form>
+                <label for="name">Enter your name:</label>
+                <input type="text" id="name">
+                <br>
+                <label for="mood">How are you feeling?</label>
+                <input type="text" id="mood">
+                <br>
+                <label for="number">Enter your favorite number (0-10):</label>
+                <input type="number" id="number" min="0" max="10" step="1">
+                <button type="button" onclick="handleUserInput()">Submit</button>
+                <button type="button" onclick="showPolygon()">Show Polygon</button>
+            </form>
+            <h3 id="greeting-message"></h3>
+            <p id="polygon-result" class="response"></p>
+
+            <button type="button" onclick="randomBunnyFact()">Random Bunny Fact</button>
+            <button type="button" onclick="giftIdea()">Give Gift Idea</button>
+            <button type="button" onclick="wrapSuggestion()">Wrap Suggestion</button>
+            <button type="button" onclick="hopQuote()">Hop Quote</button>
+            <button type="button" onclick="adoptBunny()">Adopt a Bunny!</button>
+
+            <p id="random-bunny-fact" class="response"></p>
+            <p id="gift-idea" class="response"></p>
+            <p id="wrap-suggestion" class="response"></p>
+            <p id="hop-quote" class="response"></p>
+            <p id="adopt-bunny" class="response"></p>
+            <p id="polygon-result" class="response"></p>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
