@@ -1,12 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("intro-form");
-    form.addEventListener("submit", validateForm);
-});
-document.addEventListener('DOMContentLoaded', function() {
-    const addCourseButton = document.getElementById('add-course-button');
-    addCourseButton.addEventListener('click', addCourseField);
-});
-
 // Function to validate the form
 function validateForm(event) {
     event.preventDefault(); 
@@ -76,7 +67,11 @@ function createIntroPage() {
     `;
 }
 
-// Function to reset the form
-function resetForm() {
-    document.getElementById('introForm').reset();
-}
+// DOMContentLoaded event listeners
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("intro-form");
+    form.addEventListener("submit", validateForm);
+    
+    const addCourseButton = document.getElementById('add-course-button');
+    addCourseButton.addEventListener('click', addCourseField);
+});
