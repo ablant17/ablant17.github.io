@@ -25,12 +25,19 @@ h2 {
 h3 {
     text-align: center;
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Garamond', serif;
 }
 h4 {
     text-align: left;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
+    color: #b898d3;
+}
+h5 {
+    text-align: left;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #b898d3;
 }
 footer {
     text-align: center;
@@ -187,7 +194,42 @@ main {
     background-color: #a99cc3d6; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+#intro-form {
+    background-color: #a99cc3d6;
+    max-width: 700px; 
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#intro-form input[type="text"],
+#intro-form input[type="file"],
+#intro-form input[type="button"],
+#intro-form select,
+#intro-form textarea {
+    width: 100%;
+    max-width: 700px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flexbox;
+    text-align: center;
+    font-family: 'Garamond', serif;
+}
+#intro-form label[for="agreement"] {
+    margin-bottom: 20px;
+    display: block; 
+}
+#intro-form input[type="submit"],
+#intro-form input[type="reset"] {
+    background-color: #552162;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#intro-form input[type="submit"]:hover,
+#intro-form input[type="reset"]:hover {
+    background-color: #ff69b4;
+}
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
         background-color: #171732;
