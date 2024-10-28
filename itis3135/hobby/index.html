@@ -26,10 +26,10 @@
             font-style: italic;
             text-align: center;
             color: #4f5a22;
+            margin-top: 10px;
         }
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 80%;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 5px;
             display: flex;
@@ -57,6 +57,23 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
+        li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+       ul ul li {
+           font-size: 15px;
+           line-height: 1.6;
+       }
         nav {
             margin: 20px 0;
         }
@@ -152,7 +169,30 @@
     @keyframes fadeEffect {
     from {opacity: 0.4} 
     to {opacity: 1}
-}
+    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: #47511f;
+            border: 1px solid #3b5105c8;
+        }
+        th {
+            background-color: #5b661ec8;
+            color: #d6c05d;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(250, 235, 215, 0.649);
+        }
+        tr:nth-child(odd) {
+            background-color: #d6867b80;
+        }
+
 </style>
 </head>
 <body>
@@ -173,9 +213,7 @@
     <section id="home" class="active">
         <h2>What is this hobby about?</h2>
         <h3>About Press-On Nails</h3>
-        <p>Press-on nails are an easy and creative way to enhance your look without the commitment of traditional nail polish or salon visits.</p>
-        <p>They come in various styles and can be customized to fit any occasion.</p>
-        <p>With press-on nails, you can experiment with color, shape, and design to create a unique and stylish look.</p>
+        <p>Creating press-on nails is a hands-on, creative hobby that involves designing and crafting custom nail sets tailored to individual styles and preferences. It allows for endless customization, from choosing specific sizes, shapes, and lengths to painting intricate designs and adding decorations like gems or charms. The process is both artistic and practical: after designing, the nails are simply popped onto natural nails using adhesive, giving a salon-quality look without the commitment or expense of professional manicures. This hobby combines the fun of DIY with the flexibility to switch up styles easily, making it perfect for self-expression.</p>
         <figure>
             <img src="images/nails.jpg" alt="Beautiful press-on nails"></img>
             <figcaption>Aya Takano set for a client.</figcaption>
@@ -185,7 +223,7 @@
     <section id="about">
         <h2>Who am I?</h2>
         <h3>About Me</h3>
-        <p>I’m the founder of Puellastar, a press-on nail business that I launched two years ago. With a passion for creativity and attention to detail, I specialize in creating custom press-on nails that are uniquely designed for each client. My work often includes intricately sculpted charms, personalized designs, and vibrant colors that bring out a client's individual style. Whether you’re looking for everyday elegance or bold statement nails, I love crafting pieces that highlight the versatility and artistry of nail design."</p>
+        <p>I’m the founder of Puellastar, a press-on nail business that I launched two years ago. With a passion for creativity and attention to detail, I specialize in creating custom press-on nails that are uniquely designed for each client. My work often includes intricately sculpted charms, personalized designs, and vibrant colors that bring out a client's individual style. Whether you’re looking for everyday elegance or bold statement nails, I love crafting pieces that highlight the versatility and artistry of nail design.</p>
         <p>As Puellastar grows, my goal is to expand my range of designs and techniques, building a brand that celebrates the versatility and artistry of nail design and reaches a broader community of nail art enthusiasts.</p>
         <div class="slideshow-container">
             <div class="slide fade">
@@ -260,8 +298,8 @@
             <li><em>Gel Tabs</em> - Gel tabs are nail shaped stickers that hold the nails in place. This method will last 1-2 days and is a good option for special occasions or low commitment clients.</li>
         </ul>
         <figure>
-            <img src="images/nail_party.jpg" alt="Nail art party" style="width:100%; max-width:400px;">
-            <figcaption>Gathering with friends for a nail art party!</figcaption>
+            <img src="images/how-to-use.jpg" alt="Nail art party">
+            <figcaption>Step by step guide on how to apply press-on nails.</figcaption>
         </figure>
     </section>
 
@@ -271,11 +309,11 @@
         <p>Start by creating your own nail art workspace at home.</p>
         <p>First start by sourcing supplies, such as:  </p>
         <ul>
-            <li>UV Lamp - This will be used to cure gel polishes used on the nails.</li>
-            <li>Brushes - I recommend starting with small, find detailed brushes. This will make nail art much easier.</li>
-            <li>Glue or Gel Tabs - Do your research on the best brands for your personal needs.</li>
-            <li>Full Length Nail Tips - Thee are many different brands and styles of nail tips, choose your favorite shape and length.</li>
-            <li>Nail Art Tools - I reccomend starting with your basics, such as: </li>
+            <li><em>UV Lamp</em> - This will be used to cure gel polishes used on the nails.</li>
+            <li><em>Brushes</em> - I recommend starting with small, find detailed brushes. This will make nail art much easier.</li>
+            <li><em>Glue or Gel Tabs</em> - Do your research on the best brands for your personal needs.</li>
+            <li><em>Full Length Nail Tips</em> - Thee are many different brands and styles of nail tips, choose your favorite shape and length.</li>
+            <li><em>Nail Art Tools</em> - I reccomend starting with your basics, such as: </li>
             <ul>
                 <li>Nail File and Nail Buff</li>
                 <li>Cuticle Pusher and Nippers</li>
@@ -284,46 +322,104 @@
                 <li>Gloves and Mask</li>
                 <li>Optional - Cuticle Oil</li>
             </ul>
-            <li>Finally - A Press-On Nail stand - This is what you will attach your nail tips to while you work on your nails.</li>
+            <li><em>A Press-On Nail stand</em> - This is what you will attach your nail tips to while you work on your nails.</li>
         </ul>
         <figure>
-            <img src="images/nail_space.jpg" alt="Nail art workspace" style="width:100%; max-width:400px;">
-            <figcaption>Your perfect nail art workspace at home.</figcaption>
+            <img src="images/gelkit.jpg" alt="Nail art workspace">
+            <figcaption>Typical nail art starter kit.</figcaption>
         </figure>
     </section>
 
     <section id="how">
         <h2>How</h2>
         <h3>Creating Press-On Nails</h3>
-        <p>Creating press-on nails involves selecting the right materials and designs.</p>
-        <p>Techniques include painting, embellishing, and applying the nails securely.</p>
+        <ul>
+            <li>Select your Size and Shape: </li>
+            <ul>
+                <li>Start by measuring your natural nails to determine the correct size.</li>
+                <li>Choose your desired shape and length.</li>
+            </ul>
+            <li>Prepare Your Workstation: </li>
+            <ul>
+                <li>Gather all necessary materials: nail tips, glue tabs or adhesion clay, nail polish, design tools, and a stand for the nails.</li>
+            </ul>
+            <li>Adhere Nails to the Stand: </li>
+            <ul>
+                <li>Use glue tabs or adhesion clay to secure your nails to the stand. This makes it easier to hold the nails while painting and designing.</li>
+        </ul>
+        <li>Paint and Design: </li>
+        <ul>
+            <li>Apply a base coat followed by your chosen nail polish color.</li>
+            <li>Be sure to cure between each coat per product instructions.</li>
+            <li>Get creative! Use nail art tools for designs like nail stickers, gems, or freehand art.</li>
+        </ul>
+        <li>Final Touches: </li>
+        <ul>
+            <li>Apply your favorite top coat for shine and durability.</li>
+            <li>Once you're satisfied with your design, gently pop the nails off the stand.</li>
+            <li>Your press-on nails are now ready to be applied to your natural nails!</li>
+        </ul>
+        </ul>
         <figure>
-            <img src="images/how_to_create_nails.jpg" alt="Steps to create press-on nails" style="width:100%; max-width:400px;">
-            <figcaption>Step-by-step process to create stunning press-on nails.</figcaption>
+            <img src="images/nailstand1.jpg" alt="nail stand with adhesive">
+            <img src="images/nailstand.jpg" alt="nails on nail stand">
+            <figcaption>This is how your set up should look.</figcaption>
         </figure>
-        <p><em>Image prompt: "Create a step-by-step image of the nail creation process."</em></p>
     </section>
 
     <section id="why">
-        <h2>Why</h2>
-        <h3>Benefits of Press-On Nails</h3>
-        <p>Press-on nails are a convenient and cost-effective way to keep your nails looking fabulous.</p>
-        <p>They allow for creativity and can be easily changed to match your outfit or mood.</p>
-        <figure>
-            <img src="images/benefits_nails.jpg" alt="Benefits of press-on nails" style="width:100%; max-width:400px;">
-            <figcaption>Press-on nails: the perfect blend of style and convenience!</figcaption>
-        </figure>
-        <p><em>Image prompt: "Generate an image highlighting the benefits of press-on nails."</em></p>
+        <h2>Why should you get into this hobby?</h2>
+        <h3>Reasons to Get Into the Hobby of Creating Your Own Press-On Nails</h3>
+        <ul>
+            <li><em>Creativity</em>: Designing your own press-on nails allows you to express your artistic side and create unique looks tailored to your style.</li>
+            <li><em>Cost-Effective</em>: Making your own nails can save you money compared to regular salon visits. You can invest in materials and create multiple sets over time.</li>
+            <li><em>Customization</em>: You can choose colors, shapes, and designs that reflect your personality.</li>
+            <li><em>Convenience</em>: Press-on nails are easy to apply and remove, making them perfect for anyone with a busy lifestyle who still wants to feel beautiful.</li>
+            <li><em>Skill Development</em>: This hobby helps you improve your crafting skills, particularly in areas like painting, sculpting, and design.</li>
+            <li><em>Community</em>: Join communities or groups of fellow nail enthusiasts to share tips, designs, and support each other in your nail art journeys.</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>DIY Press-On Nails</th>
+                <th>Salon Nails</th>
+            </tr>
+            <tr>
+                <td>Initial Setup Cost</td>
+                <td>$50 - $100 (for supplies)</td>
+                <td>$75 - $180+ (per visit)</td>
+            </tr>
+            <tr>
+                <td>Cost per Set</td>
+                <td>$5 - $20 (for materials)</td>
+                <td>$75 - $180+ (for gel-x nails)</td>
+            </tr>
+            <tr>
+                <td>Customization</td>
+                <td>Unlimited options</td>
+                <td>Limited to salon or artists style</td>
+            </tr>
+            <tr>
+                <td>Time to Create/Apply</td>
+                <td>On your own time</td>
+                <td>2-4 hours</td>
+            </tr>
+            <tr>
+                <td>Frequency of Change</td>
+                <td>As often as desired</td>
+                <td>Typically every 2-3 weeks</td>
+            </tr>
+        </table>
     </section>
 </main>
 
 <footer>
     <div>
-        <a href="https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks" class="validation-button">HTML Validation</a>
-        <a href="https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks" class="validation-button">CSS Validation</a>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html" class="validation-button">HTML Validation</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css" class="validation-button">CSS Validation</a>
         <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks" class="validation-button">Accessibility Validation</a>
     </div>
-    <p>Designed by <a href="http://yourdesignfirm.com">AB Web Innovations</a></p>
+    <p>© 2024 Puellastar - Designed By <a href="https://webpages.charlotte.edu/UNCCID/itis3135/abwebinnovations.com/">AB Web Innovations</a></p>
 </footer>
 
 <script>
