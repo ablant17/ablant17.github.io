@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <style>
+        body {
+            font-family: 'Cambria, serif';
+            background-color: #d5c4b1;
+            color: #606c29;
+            margin: 0;
+            padding: 0 15px;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+        }
+        header {
+            background-color: #5b661ec8;
+            color: #d6c05d;
+            padding: 20px 0;
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            text-align: center;
+            color: #4f5a22;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            display: flex;
+            margin: 20px auto;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 35px;
+            margin-top: 20px;
+            margin-bottom: 30px; 
+            text-align: center;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            display: inline-block;
+            color: #e2cdb6;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #d6867b;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #e2cdb6; 
+            color: #d6867b;
+        }
+        section {
+            display: none; 
+            padding: 20px;
+            max-width: 100%;
+        }
+        section.active {
+            display: block; 
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #67742c;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+            color: #ad675e
+        }
+        .validation-button {
+            margin: 10px;
+            display: inline-block;
+            background-color: #5b661ec8;
+            color: #CACF85;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .validation-button:hover {
+            background-color: #d6867b;
+            color: #c4d01e;
+            text-decoration: none;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+        }
+        .slide {
+           opacity: 1;
+           transition: opacity 1.5s ease;
+        }
+        .fade {
+            animation-name: fadeEffect;
+            animation-duration: 1.5s;
+        }
+        .caption {
+            color: #f2f2f2;
+            font-size: 18px;
+            padding: 8px 12px;
+            position: relative;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(97, 106, 21, 0.475);
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s;
+            user-select: none;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+    }
+    @keyframes fadeEffect {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Creating Press-On Nails</h1>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('schedule')">Schedule</a>
+        <a href="#" onclick="showSection('where')">Where</a>
+        <a href="#" onclick="showSection('how')">How</a>
+        <a href="#" onclick="showSection('why')">Why</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="active">
+        <h2>What is this hobby about?</h2>
+        <h3>About Press-On Nails</h3>
+        <p>Press-on nails are an easy and creative way to enhance your look without the commitment of traditional nail polish or salon visits.</p>
+        <p>They come in various styles and can be customized to fit any occasion.</p>
+        <p>With press-on nails, you can experiment with color, shape, and design to create a unique and stylish look.</p>
+        <figure>
+            <img src="images/nails.jpg" alt="Beautiful press-on nails"></img>
+            <figcaption>Aya Takano set for a client.</figcaption>
+        </figure>
+    </section>
+
+    <section id="about">
+        <h2>Who am I?</h2>
+        <h3>About Me</h3>
+        <p>I’m the founder of Puellastar, a press-on nail business that I launched two years ago. With a passion for creativity and attention to detail, I specialize in creating custom press-on nails that are uniquely designed for each client. My work often includes intricately sculpted charms, personalized designs, and vibrant colors that bring out a client's individual style. Whether you’re looking for everyday elegance or bold statement nails, I love crafting pieces that highlight the versatility and artistry of nail design."</p>
+        <p>As Puellastar grows, my goal is to expand my range of designs and techniques, building a brand that celebrates the versatility and artistry of nail design and reaches a broader community of nail art enthusiasts.</p>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/nails1.jpg" alt="Nail Art 1">
+                <div class="caption">Taylor Swift Inspired set.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails2.jpg" alt="Nail Art 2">
+                <div class="caption">Teddy Bear Inspired set.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails3.jpg" alt="Nail Art 3">
+                <div class="caption">Hand Sculpted set on myself.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails4.jpg" alt="Nail Art 4">
+                <div class="caption">Hand Sculpted set for client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails5.jpg" alt="Nail Art 5">
+                <div class="caption">Custom set for a client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails6.jpg" alt="Nail Art 6">
+                <div class="caption">Renaissance Nail Art.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails7.jpg" alt="Nail Art 7">
+                <div class="caption">Valentine Inspired Set.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails8.jpg" alt="Nail Art 8">
+                <div class="caption">Hand Sculpted set for client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails9.jpg" alt="Nail Art 9">
+                <div class="caption">Hand Sculpted Orchid Set.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails10.jpg" alt="Nail Art 10">
+                <div class="caption">Hand Sculpted set for client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails11.jpg" alt="Nail Art 11">
+                <div class="caption">Hand Sculpted set for client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails12.jpg" alt="Nail Art 12">
+                <div class="caption">Custom set for a client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails13.jpg" alt="Nail Art 13">
+                <div class="caption">Devil May Cry Inspired Set for a client.</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/nails14.jpg" alt="Nail Art 14">
+                <div class="caption">Vacation set for a client.</div>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>       
+    </section>
+
+    <section id="schedule">
+        <h2>How long do press on nails last?</h2>
+        <h3>Depends on what method you use to adhere them!</h3>
+        <p>There are two different ways to adhere press-on nails:</p>
+        <ul>
+            <li><em>Nail Glue</em> - Glue is a strong adhesive that holds the nails in place for a longer period of time. It can last up to 2-3 weeks if proper nail prep is done.</li>
+            <li><em>Gel Tabs</em> - Gel tabs are nail shaped stickers that hold the nails in place. This method will last 1-2 days and is a good option for special occasions or low commitment clients.</li>
+        </ul>
+        <figure>
+            <img src="images/nail_party.jpg" alt="Nail art party" style="width:100%; max-width:400px;">
+            <figcaption>Gathering with friends for a nail art party!</figcaption>
+        </figure>
+    </section>
+
+    <section id="where">
+        <h2>Where do I start?</h2>
+        <h3>Beginner Nail Art Workspace</h3>
+        <p>Start by creating your own nail art workspace at home.</p>
+        <p>First start by sourcing supplies, such as:  </p>
+        <ul>
+            <li>UV Lamp - This will be used to cure gel polishes used on the nails.</li>
+            <li>Brushes - I recommend starting with small, find detailed brushes. This will make nail art much easier.</li>
+            <li>Glue or Gel Tabs - Do your research on the best brands for your personal needs.</li>
+            <li>Full Length Nail Tips - Thee are many different brands and styles of nail tips, choose your favorite shape and length.</li>
+            <li>Nail Art Tools - I reccomend starting with your basics, such as: </li>
+            <ul>
+                <li>Nail File and Nail Buff</li>
+                <li>Cuticle Pusher and Nippers</li>
+                <li>Lint-Free Wipes</li>
+                <li>Acetone and Rubbing Alcohol</li>
+                <li>Gloves and Mask</li>
+                <li>Optional - Cuticle Oil</li>
+            </ul>
+            <li>Finally - A Press-On Nail stand - This is what you will attach your nail tips to while you work on your nails.</li>
+        </ul>
+        <figure>
+            <img src="images/nail_space.jpg" alt="Nail art workspace" style="width:100%; max-width:400px;">
+            <figcaption>Your perfect nail art workspace at home.</figcaption>
+        </figure>
+    </section>
+
+    <section id="how">
+        <h2>How</h2>
+        <h3>Creating Press-On Nails</h3>
+        <p>Creating press-on nails involves selecting the right materials and designs.</p>
+        <p>Techniques include painting, embellishing, and applying the nails securely.</p>
+        <figure>
+            <img src="images/how_to_create_nails.jpg" alt="Steps to create press-on nails" style="width:100%; max-width:400px;">
+            <figcaption>Step-by-step process to create stunning press-on nails.</figcaption>
+        </figure>
+        <p><em>Image prompt: "Create a step-by-step image of the nail creation process."</em></p>
+    </section>
+
+    <section id="why">
+        <h2>Why</h2>
+        <h3>Benefits of Press-On Nails</h3>
+        <p>Press-on nails are a convenient and cost-effective way to keep your nails looking fabulous.</p>
+        <p>They allow for creativity and can be easily changed to match your outfit or mood.</p>
+        <figure>
+            <img src="images/benefits_nails.jpg" alt="Benefits of press-on nails" style="width:100%; max-width:400px;">
+            <figcaption>Press-on nails: the perfect blend of style and convenience!</figcaption>
+        </figure>
+        <p><em>Image prompt: "Generate an image highlighting the benefits of press-on nails."</em></p>
+    </section>
+</main>
+
+<footer>
+    <div>
+        <a href="https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks" class="validation-button">HTML Validation</a>
+        <a href="https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks" class="validation-button">CSS Validation</a>
+        <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/PAGENAMELinks" class="validation-button">Accessibility Validation</a>
+    </div>
+    <p>Designed by <a href="http://yourdesignfirm.com">AB Web Innovations</a></p>
+</footer>
+
+<script>
+function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+
+    showSection('home');
+</script>
+
+<script>
+    let slideIndex = 0; 
+    showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide fade"); 
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 } 
+    slides[slideIndex - 1].style.display = "block"; 
+    setTimeout(showSlides, 5000); 
+}
+
+function plusSlides(n) {
+    slideIndex += n; //
+    let slides = document.getElementsByClassName("slide fade"); 
+    if (slideIndex > slides.length) { slideIndex = 1 } 
+    if (slideIndex < 1) { slideIndex = slides.length } 
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slides[slideIndex - 1].style.display = "block"; 
+}
+
+</script>
+
+</body>
+</html>
