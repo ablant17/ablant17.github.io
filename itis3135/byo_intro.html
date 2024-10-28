@@ -18,69 +18,58 @@
         <h3>We would love to create an introduction page for you, but we'll need some information first!</h3>
 
         <form id="intro-form">
-            <!-- Name -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-            <!-- Mascot -->
+            <input type="text" id="name" required placeholder="Enter your name">
+        
             <label for="mascot">Mascot:</label>
-            <input type="text" id="mascot" name="mascot" placeholder="Enter your mascot" required>
-            
-            <!-- Image -->
+            <input type="text" id="mascot" required placeholder="Enter your mascot">
+        
             <label for="image">Upload an image (PNG/JPG):</label>
-            <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
-           
-            <!-- Image Caption -->
-            <label for="image-caption">Image Caption:</label>
-            <input type="text" id="image-caption" name="image-caption" placeholder="Enter a caption for the image" required>
-
-            <!-- Personal Background -->
-            <label for="personal-background">Personal Background:</label>
-            <textarea id="personal-background" name="personal-background" placeholder="Tell us about your personal background" required></textarea>
-
-            <!-- Professional Background -->
-            <label for="professional-background">Professional Background:</label>
-            <textarea id="professional-background" name="professional-background" placeholder="Tell us about your professional background" required></textarea>
-
-            <!-- Academic Background -->
-            <label for="academic-background">Academic Background:</label>
-            <textarea id="academic-background" name="academic-background" placeholder="Tell us about your academic background" required></textarea>
-
-            <!-- Web Development Background -->
-            <label for="web-dev-background">Background in Web Development:</label>
-            <textarea id="web-dev-background" name="web-dev-background" placeholder="Tell us about your background in web development" required></textarea>
-
-            <!-- Primary Computer Platform -->
+            <input type="file" id="image" required accept=".png, .jpg, .jpeg">
+        
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imag-caption" required placeholder="Image Caption">
+        
+            <label for="personalBackground">Personal Background:</label>
+            <input type="text" id="personal-background" required placeholder="Personal Background">
+        
+            <label for="professionalBackground">Professional Background:</label>
+            <input type="text" id="professional-background" required placeholder="Professional Background">
+        
+            <label for="academicBackground">Academic Background:</label>
+            <input type="text" id="academic-background" required placeholder="Academic Background">
+        
+            <label for="webDevBackground">Background in Web Development:</label>
+            <input type="text" id="web-dev-background" required placeholder="Web Development Background">
+        
             <label for="platform">Primary Computer Platform:</label>
-            <input type="text" id="platform" name="platform" placeholder="e.g., Windows, Mac, Linux" required>
-
-            <!-- Courses Currently Taking -->
-            <fieldset>                        
+            <select id="platform" required>
+                <option value="Windows">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Linux">Linux</option>
+            </select>
+        
+            <fieldset>
                 <legend>Courses Currently Taking</legend>
                 <div id="courses"></div>
                 <button type="button" id="add-course-button">Add Course</button>
             </fieldset>
-            
-
-            <!-- Funny Thing -->
-            <label for="funny-thing">Funny Thing:</label>
-            <input type="text" id="funny-thing" name="funny-thing" placeholder="Tell us something funny!">
-
-            <!-- Anything Else? -->
-            <label for="anything-else">Anything Else?</label>
-            <textarea id="anything-else" name="anything-else" placeholder="Anything else you want to share?"></textarea>
-
-            <!-- Checkbox Agreement -->
-            <label for="agreement">
-                <input type="checkbox" id="agreement" name="agreement" required>
+        
+            <label for="funnyThing">Funny thing?</label>
+            <input type="text" id="funny-thing" placeholder="Share something funny!">
+        
+            <label for="anythingElse">Anything else?</label>
+            <textarea id="anything-else" placeholder="Add any additional comments..."></textarea>
+        
+            <label>
+                <input type="checkbox" id="agreement" required>
                 I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
             </label>
 
-            <!-- Submit and Reset Buttons -->
-        <div>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </div>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
         </form>
     </main>
 
