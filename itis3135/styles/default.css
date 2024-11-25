@@ -231,6 +231,22 @@ main {
 #intro-form input[type="reset"]:hover {
     background-color: #ff69b4;
 }
+.reset-button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+#reset-btn {
+    background-color: #ff69b4; 
+    color: white;            
+    padding: 5px 10px;        
+    font-size: 14px;          
+    border: none;
+    cursor: pointer;
+}
+#reset-btn:hover {
+    background-color: #ef8bb7;
+}
+
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
         background-color: #171732;
