@@ -2,21 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    overflow-x: hidden;
 }
 
 .container {
     display: flex;
+    width: 100%;
     max-width: 2000px;
     margin: 0 auto;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -60,6 +60,7 @@ body {
     margin-left: 270px; 
     padding: 20px;
     max-width: calc(100% - 270px);
+    flex-grow: 1;
 }
 
 /* Header Styles */
