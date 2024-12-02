@@ -20,4 +20,10 @@ function showPolygon() {
     const polygonName = polygons[number] || "invalid number";
     document.getElementById('polygon-result').textContent = `Your polygon is a ${polygonName}!`;
 }
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("submit-button").addEventListener("click", handleUserInput);
+    document.getElementById("polygon-button").addEventListener("click", showPolygon);
+});
+
+
 
