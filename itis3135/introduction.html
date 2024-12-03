@@ -4,40 +4,42 @@
         <meta charset="utf-8">
         <title>Introduction Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/default.css">
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
     <body>
-        <figure id="myself1"><img src="images/myself1.png" alt="ashleyblanton"></figure>
-        <figcaption><em>Wedding Guest 2024</em></figcaption>
-        <ul>
-            <li><strong>Personal Background: </strong> I was born and raised in Kings Mountain, North Carolina, currently living in Charlotte. In what little free time I have, I play video games and watch anime. </li>
-            <li><strong>Professional Background: </strong> I have no professional experience in my field, but, I currently work as a barista at Not Just Coffee and I also run a shop doing custom press-on nails.</li>
-            <li><strong>Academic Background: </strong> Currently a senior getting a B.A. in Computer Science (Information Technology)
-            </li>
-            <li><strong>Background in this Subject: </strong> I have no experience in web development.</li>
-            <li><strong>Primary Computer Platform: </strong> Windows 10</li>
-            <li><strong>Courses I'm Currently Taking and Why: </strong></li>
+        <header id="header-container">
+        </header>
+        <main>
+            <h1>Introduction</h1>
+            <figure id="myself1">
+                <img src="images/myself1.png" alt="ashleyblanton">
+                <figcaption><em>Wedding Guest 2024</em></figcaption>
+            </figure>
             <ul>
-                <li><strong>ITCS 3160: Database and Implementation: </strong> - required</li>
-                <li><strong>ITCS 3166: Intro to Computer Networks: </strong> - required</li>
-                <li><strong>ITIS 3200: Intro to Security and Privacy: </strong> - required</li>
-                <li><strong>ITIS 3135: Web App Design and Development: </strong> - required</li>
+                <li><strong>Personal Background: </strong> I was born and raised in Kings Mountain, North Carolina, currently living in Charlotte. In what little free time I have, I play video games and watch anime. </li>
+                <li><strong>Professional Background: </strong> I have no professional experience in my field, but, I currently work as a barista at Not Just Coffee and I also run a shop doing custom press-on nails.</li>
+                <li><strong>Academic Background: </strong> Currently a senior getting a B.A. in Computer Science (Information Technology)</li>
+                <li><strong>Background in this Subject: </strong> I have no experience in web development.</li>
+                <li><strong>Primary Computer Platform: </strong> Windows 10</li>
+                <li><strong>Courses I'm Currently Taking and Why: </strong></li>
+                <ul>
+                    <li><strong>ITCS 3160: Database and Implementation: </strong> - required</li>
+                    <li><strong>ITCS 3166: Intro to Computer Networks: </strong> - required</li>
+                    <li><strong>ITIS 3200: Intro to Security and Privacy: </strong> - required</li>
+                    <li><strong>ITIS 3135: Web App Design and Development: </strong> - required</li>
+                </ul>
+                <li><strong>Funny/Interesting Item to remember me by: </strong> funny hair cut</li>
+                <li><strong>I'd also like to Share: </strong> born to play dress to impress, forced to have a career.</li>
             </ul>
-            <li><strong>Funny/Interesting Item to remember me by: </strong> funny hair cut</li>
-            <li><strong>I'd also like to Share: </strong> born to play dress to impress, forced to have a career.</li>
-        </ul>
-        <footer>
-            <div data-include="components/footer.html"></div>
+        </main>
+        <footer id="footer-container">
         </footer>
-        <script src="scripts/HTMLInclude.min.js"></script>
-        <script>
-            document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href));
-            document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href));
-        </script>        
+        <div id="validation-buttons">
+            <button class="validation-button" id="validate-html">Validate HTML</button>
+            <button class="validation-button" id="validate-css">Validate CSS</button>
+            <button class="validation-button" id="validate-accessibility">Validate Accessibility</button>
+        </div>
+        <script src="scripts/scripts.js" defer></script>
     </body>
 </html>

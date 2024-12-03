@@ -4,26 +4,24 @@
         <meta charset="utf-8">
         <title>Adroit Bunny - About Us</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles/default.css">
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <div data-include="components/header.html"></div>
+        <header id="header-container">
         </header>
         <main>
             <h1>About Adroit Bunny</h1>
             <p>At <strong>Adroit Bunny</strong>, we believe that every gift should be wrapped with both care and creativity, without compromising the environment. We specialize in offering sustainable, reusable, and beautifully designed gift wrapping materials that make your presents stand out while helping reduce waste.</p>
             <p>From our whimsical bunny-themed fabric wraps to our 100% recycled paper and customizable gift tags, every product is designed with both style and sustainability in mind. Join us as we "Hop Lightly" and make gift-giving more thoughtful for the planet!</p>
         </main>
-        <footer>
-            <div data-include="components/footer.html"></div>
+        <footer id="footer-container">
         </footer>
-        <script src="scripts/HTMLInclude.min.js"></script>
-        <script>
-            document.getElementById("validation-link-html").setAttribute("href", "https://validator.w3.org/check?uri=" + encodeURIComponent(window.location.href));
-            document.getElementById("validation-link-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(window.location.href));
-        </script>        
+        <div id="validation-buttons">
+            <button class="validation-button" id="validate-html">Validate HTML</button>
+            <button class="validation-button" id="validate-css">Validate CSS</button>
+            <button class="validation-button" id="validate-accessibility">Validate Accessibility</button>
+        </div>
+        <script src="scripts/scripts.js" defer></script>
     </body>
 </html>

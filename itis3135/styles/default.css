@@ -1,8 +1,7 @@
 img {
-    max-width: 60%;
+    max-width: 70%;
     height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 15px auto;
     display: flex;
 }
 body {
@@ -14,7 +13,7 @@ h1 {
     text-align: center;
     color: #b898d3;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 35px;
 }
 h2 {
     text-align: center;
@@ -38,10 +37,6 @@ h5 {
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #b898d3;
-}
-footer {
-    text-align: center;
-    margin-top: 20px;
 }
 nav {
     text-align: center;
@@ -247,6 +242,131 @@ main {
     background-color: #ef8bb7;
 }
 
+/* Json Styles */ 
+#header-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 15px auto;
+}
+
+.menu-item {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 400;
+    color: #552162;
+    background-color: #f0e6ff;
+    border: 2px solid #b898d3;
+    padding: 7px 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none; 
+    margin: 5px; 
+}
+
+.menu-item:hover {
+    transform: translateY(-4px);
+    background-color: #e6d8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Validation Button */ 
+#validation-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#validation-buttons button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-weight: 400;
+    color: #552162;
+    background-color: #f0e6ff; 
+    border: 2px solid #b898d3; 
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#validation-buttons button:hover {
+    transform: translateY(-4px);
+    background-color: #e6d8ff; 
+    color: #ff69b4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Credits */
+#footer-credits {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#footer-credits a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: #552162;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#footer-credits a:hover {
+    color: #ff69b4;
+    text-decoration: underline;
+}
+
+#footer-credits span {
+    color: #552162;
+    margin: 0 5px;
+}
+
+/* Footer Content */
+#footer-content {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0;
+}
+#footer-content p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1e022a;
+}
+#footer-content .tagline {
+    font-style: italic;
+}
+
+/*Footer Links */
+#footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.footer-link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #552162;
+    background-color: #f0e6ff;
+    border: 2px solid #b898d3;
+    padding: 5px 8px;
+    margin: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    transform: translateY(-3px);
+    background-color: #e6d8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Media Queries */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     #colorbox {
         background-color: #171732;
