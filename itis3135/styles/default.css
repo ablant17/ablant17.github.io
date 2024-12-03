@@ -11,15 +11,15 @@ body {
 }
 h1 {
     text-align: center;
-    color: #a67aca;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.167);
+    color: #6e3691;
+    text-shadow: 2px 2px 4px rgb(167, 85, 208);
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
 }
 h2 {
     text-align: center;
-    color: #a67aca;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
+    color: #6e3691;
+    text-shadow: 2px 2px 4px rgb(167, 85, 208);
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
 }
@@ -32,13 +32,15 @@ h4 {
     text-align: left;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
-    color: #a67aca;
+    color: #6e3691;
+    text-shadow: 2px 2px 4px rgb(167, 85, 208);
 }
 h5 {
     text-align: left;
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #a67aca;
+    color: #6e3691;
+    text-shadow: 2px 2px 4px rgb(167, 85, 208);
 }
 nav {
     text-align: center;
