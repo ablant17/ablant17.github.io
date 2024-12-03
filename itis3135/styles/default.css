@@ -12,12 +12,14 @@ body {
 h1 {
     text-align: center;
     color: #b898d3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.167);
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
 }
 h2 {
     text-align: center;
     color: #b898d3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
 }
