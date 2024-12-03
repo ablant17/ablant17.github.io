@@ -27,10 +27,11 @@ function adoptBunny() {
     document.getElementById('adopt-bunny').textContent = "Adopt a Bunny: Visit our adoption page to find your furry friend!";
 }
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("button:nth-of-type(3)").addEventListener("click", randomBunnyFact);
-    document.querySelector("button:nth-of-type(4)").addEventListener("click", giftIdea);
-    document.querySelector("button:nth-of-type(5)").addEventListener("click", wrapSuggestion);
-    document.querySelector("button:nth-of-type(6)").addEventListener("click", hopQuote);
-    document.querySelector("button:nth-of-type(7)").addEventListener("click", adoptBunny);
+    document.getElementById("random-bunny-fact-button").addEventListener("click", randomBunnyFact);
+    document.getElementById("gift-idea-button").addEventListener("click", giftIdea);
+    document.getElementById("wrap-suggestion-button").addEventListener("click", wrapSuggestion);
+    document.getElementById("hop-quote-button").addEventListener("click", hopQuote);
+    document.getElementById("adopt-bunny-button").addEventListener("click", adoptBunny);
 });
+
 
