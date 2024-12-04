@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makeup</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="contact-page">
     <div class="container">
         <aside class="sidebar">
             <img src="images/Screenshot 2024-11-25 172447.png" alt="Jordan Qualls Logo" class="logo">
@@ -28,20 +29,39 @@
             </section>
             <section class="business-card-container">
                 <div class="business-card">
+                    <!-- Front of the card -->
                     <div class="card-front">
-                        <img src="images/cardlogo.png" alt="Your Image" class="card-image">
+                        <img src="images/Screenshot 2024-12-04 140816.png" alt="Contact Image" class="card-image">
                     </div>
+                    <!-- Back of the card -->
                     <div class="card-back">
-                        <h2>Contact Info</h2>
-                        <a href="mailto:example@example.com">Email Me</a>
-                        <a href="https://www.instagram.com/jordiclawz/?fbclid=IwY2xjawGx7BdleHRuA2FlbQIxMAABHfmS2dkGsUYn5gjltNCbIgIkRyFxN3ix6LOJSmoDWmf9QtPEsVgiC2Jz9w_aem_lx2OWTwTtqYtKmZdSDiM3g" target="_blank">Instagram</a>
-                        <a href="https://www.tiktok.com/@jordiordi?_t=8rhXJbi1NpG&_r=1&fbclid=IwY2xjawGx64RleHRuA2FlbQIxMAABHbGgLOLd1RYLm3N6YENdMhGtAIAtvuuE6dnb_it4Sj3Jt4i3hTNYnNuirg_aem_7osUTkmBAno0Qy0TIIejFw" target="_blank">TikTok</a>
-                        <a href="https://jordiclawz.bigcartel.com/?fbclid=IwY2xjawGx62FleHRuA2FlbQIxMAABHch3SL7lSt4E0xnCvnP_1YvN4uSX81YK4w1NrQLFle0UAITIzeWDIQYwig_aem_AtgIFPXY_DARnjtagGgbmA" target="_blank">Big Cartel</a>
+                        <div class="card-back-content">
+                            <p>Jordan Qualls</p>
+                            <p>Email: jordanquallsartistry@gmail.com</p>
+                            <p>Phone: (704) 472-7102</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/jordiclawz/" target="_blank">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.tiktok.com/@jordiordi" target="_blank">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </a>
+                            <a href="https://jordiclawz.bigcartel.com/" target="_blank">
+                                <i class="fas fa-shopping-cart"></i> Big Cartel
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </section>            
         </main>
     </div>   
-    <footer><p>© 2024 Puellastar - Designed By <a href="https://webpages.charlotte.edu/ablant17/itis3135/abwebinnovations.com/">AB Web Innovations</a></p></footer>
+    <footer><p>© 2024 Puellastar - Designed By <a href="https://webpages.charlotte.edu/ablant17/itis3135/abwebinnovations.com/">AB Web Innovations</a></p>
+    <div class="validation-buttons">
+        <a href="https://validator.w3.org/nu/?doc=${currentURL}" target="_blank" class="validation-button">Validate HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=${currentURL}&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank" class="validation-button">Validate CSS</a>
+        <a href="https://wave.webaim.org/report#/url=${currentURL}" target="_blank" class="validation-button">Accessibility Check</a>
+    </div>
+    </footer>
 </body>
 </html>
