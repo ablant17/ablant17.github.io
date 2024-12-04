@@ -145,15 +145,16 @@ figcaption {
 
 /* About me Section */
 .about-section {
-    padding: 50px 20px;
-    max-width: 1200px;
+    padding: 50px 30px;
     margin-top: 20px;
     margin-left: 290px;
+    margin-right: 20px;
     background: #aea3a3;
     color: #dddddd;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     display: block;
     justify-content: center;
+    max-width: calc(100% - 270px);
 }
 
 .about-content {
@@ -186,7 +187,7 @@ figcaption {
 }
 
 .about-text h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     margin-bottom: 20px;
     text-align: center;
     color: #dddddd;
@@ -194,7 +195,7 @@ figcaption {
 }
 
 .about-text p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6;
     margin-bottom: 20px;
     color: #dddddd;
@@ -439,11 +440,15 @@ figcaption {
   }
   
   .publication-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     background: #fff;
     box-shadow: 0 4px 6px rgb(0, 0, 0);
     overflow: hidden;
     position: relative;
-  }
+    text-align: center; 
+}
   
   .publication-card img {
     width: 100%;
@@ -470,7 +475,6 @@ figcaption {
     color: #fff;
     padding: 8px 15px;
     text-decoration: none;
-    border-radius: 4px;
     margin: 0 15px 15px;
     transition: background 0.3s ease;
   }
@@ -478,7 +482,6 @@ figcaption {
   .read-more:hover {
     background: #0057b335;
   }
-
   .publication-card::after {
     content: '';
     position: absolute;
@@ -488,30 +491,25 @@ figcaption {
     bottom: 0;
     background: rgba(0, 0, 0, 0.271);
     opacity: 0;
+    pointer-events: none; 
     transition: opacity 0.3s ease;
-  }
-  
+}
   .publication-card:hover::after {
     opacity: 1;
   }
 
 /* Footer Styles */
 footer {
-    background-color: #857e7e00;
-    padding: 10px;
+    padding: 20px;
+    margin: 0 0 0 270px;
     margin-top: 20px;
     text-align: center;
-    color: #0b0b0b;
+    color: #a29191;
     font-size: 0.9em;
 }
 
-footer p {
-    margin: 0 auto; 
-    text-align: center;
-}
-
 footer a {
-    color: #060606;
+    color: #a29191;
     text-decoration: none;
 }
 

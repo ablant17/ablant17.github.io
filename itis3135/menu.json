@@ -12,5 +12,6 @@
     {"name": "Hobby", "url": "hobby/index.html"},
     {"name": "Drawing", "url": "drawing.html"},
     {"name": "Client Project", "url": "project/index.html"},
-    {"name": "Crappy Website", "url": "stuff/sUp3r@w3s0m3333w33bs!te.html"}
+    {"name": "Crappy Website", "url": "stuff/sUp3r@w3s0m3333w33bs!te.html"},
+    {"name": "Slideshow", "url": "slideshow.html"}
 ]
