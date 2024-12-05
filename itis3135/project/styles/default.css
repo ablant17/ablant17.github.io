@@ -586,31 +586,35 @@ footer a:hover {
     }
     /* about */
     .about-section {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 30px;
-        padding: 10px;
+        max-width: 100%;
+        padding: 20px;
       }
     
       .about-section h2 {
-        font-size: 1.5em;
+        font-size: 2em;
       }
     
       .about-section p {
-        font-size: 0.9em;
+        font-size: 1em;
       }
     
       .about-content {
         flex-direction: column;
-        align-items: center;
+        align-items: center;    
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+        padding: 20px;
       }
     
       .about-image {
         width: 100%;
-        max-width: none;
-        height: auto;
+        max-width: 300px;
         margin-bottom: 20px;
-        margin-top: 30px;
+        margin-top: 70px;
       }
     
       .publications-grid {
