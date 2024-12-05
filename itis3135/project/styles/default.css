@@ -547,43 +547,96 @@ footer a:hover {
     color: #f30303f7;
 }
 
-/* Responsive Design */
-@media (max-width: 1000px) {
+/* SidebarResponsive Design */
+@media (max-width: 768px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+      width: 100%;
+      height: auto;
+      position: static;
+      text-align: center;
     }
+    
+    .sidebar nav ul {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .sidebar nav ul li {
+      padding: 5px 10px;
+    }
+  }
 
+  /* Main Content Responsive Design */
+  @media (max-width: 768px) {
     .main-content {
-        margin-left: 0;
-        max-width: 100%; 
-        flex-grow: 1;
+      margin-left: 0;
+      max-width: 100%;
+      padding: 10px;
     }
+    
+    .header {
+      height: auto;
+    }
+    
+    .header-image {
+      height: auto;
+    }
+    
+    .header-text {
+      position: static;
+      transform: none;
+      padding: 15px;
+    }
+  }
 
-    .portfolio-slideshow {
-        flex-wrap: wrap;
-    }
-}
-@media screen and (max-width: 1200px) {
+  /* Image Gallery Responsive Design */
+  @media screen and (max-width: 768px) {
+    .nail-gallery,
     .makeup-gallery {
-        grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media screen and (max-width: 900px) {
+  }
+  
+  @media screen and (max-width: 480px) {
+    .nail-gallery,
     .makeup-gallery {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
     }
-}
+  }
 
-@media screen and (max-width: 600px) {
-    .makeup-gallery {
-        grid-template-columns: repeat(2, 1fr);
+  /* About Page Responsive Design */
+  @media (max-width: 768px) {
+    .about-section {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
     }
-}
+    
+    .about-image {
+      max-width: 100%;
+    }
+  }
 
+  /* Business Card Responsive Design */
+  @media (max-width: 768px) {
+    .business-card {
+      width: 90%;
+      height: auto;
+    }
+    
+    .card-front img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
-
+  /* Publications Page Responsive Design */
+  @media (max-width: 768px) {
+    .publications-grid {
+      margin-left: 0;
+      padding: 10px;
+    }
+  }
 
 
