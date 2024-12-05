@@ -593,6 +593,14 @@ footer a:hover {
         padding: 20px;
       }
     
+      .about-section h2 {
+        font-size: 2em;
+      }
+    
+      .about-section p {
+        font-size: 1em;
+      }
+    
       .about-content {
         flex-direction: column;
         align-items: center;    
@@ -603,7 +611,8 @@ footer a:hover {
       }
     
       .about-image {
-        max-width: 100%;
+        width: 100%;
+        max-width: 300px;
         margin-bottom: 20px;
         margin-top: 70px;
       }
@@ -619,15 +628,17 @@ footer a:hover {
     
     /* Footer */
     footer {
-        margin-left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        margin-left: 0; 
+        padding: 10px; 
     }
-    
-    footer a {
-        margin: 0 10px;
+    .footer-main {
+        flex-direction: row; 
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+    .footer-validations {
+        width: 100%; 
+        text-align: center; 
     }
 }
 
