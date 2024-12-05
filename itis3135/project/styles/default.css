@@ -560,7 +560,7 @@ footer a:hover {
     }
   
     .sidebar .logo {
-      max-width: 100px;
+      width: 100px;
       margin: 0;
       float: left;
     }
@@ -586,35 +586,31 @@ footer a:hover {
     }
     /* about */
     .about-section {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         margin-top: 30px;
-        max-width: 100%;
-        padding: 20px;
+        padding: 10px;
       }
     
       .about-section h2 {
-        font-size: 2em;
+        font-size: 1.5em;
       }
     
       .about-section p {
-        font-size: 1em;
+        font-size: 0.9em;
       }
     
       .about-content {
         flex-direction: column;
-        align-items: center;    
-        margin-left: 0;
-        margin-right: 0;
-        max-width: 100%;
-        padding: 20px;
+        align-items: center;
       }
     
       .about-image {
         width: 100%;
-        max-width: 300px;
+        max-width: none;
+        height: auto;
         margin-bottom: 20px;
-        margin-top: 70px;
+        margin-top: 30px;
       }
     
       .publications-grid {
