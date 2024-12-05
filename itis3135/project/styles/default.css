@@ -62,7 +62,6 @@ body {
     padding: 20px;
     max-width: calc(100% - 270px);
     flex-grow: 1;
-    overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -548,22 +547,21 @@ footer a:hover {
 }
 
 /* SidebarResponsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .sidebar {
       width: 100%;
       height: auto;
-      position: static;
-      text-align: center;
+      position: relative;
     }
     
     .sidebar nav ul {
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
     }
     
     .sidebar nav ul li {
-      padding: 5px 10px;
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -573,6 +571,7 @@ footer a:hover {
       margin-left: 0;
       max-width: 100%;
       padding: 10px;
+      overflow-x: auto;
     }
     
     .header {
@@ -591,19 +590,23 @@ footer a:hover {
   }
 
   /* Image Gallery Responsive Design */
-  @media screen and (max-width: 768px) {
-    .nail-gallery,
+  @media screen and (max-width: 1200px) {
     .makeup-gallery {
-      grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .nail-gallery,
+}
+
+@media screen and (max-width: 900px) {
     .makeup-gallery {
-      grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .makeup-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
   /* About Page Responsive Design */
   @media (max-width: 768px) {
@@ -634,8 +637,7 @@ footer a:hover {
   /* Publications Page Responsive Design */
   @media (max-width: 768px) {
     .publications-grid {
-      margin-left: 0;
-      padding: 10px;
+      margin-left: 20px;
     }
   }
 
