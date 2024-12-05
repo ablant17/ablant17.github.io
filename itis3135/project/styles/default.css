@@ -699,14 +699,24 @@ footer a:hover {
         text-align: center; 
     }
 
+    .card-back-content h2 {
+        font-size: 1.5em; 
+    }
     .card-back-content p {  
         font-size: 1em; 
     }
     .card-back-content a {
-        font-size: 0.5em; 
-        color: #ad15db; 
+        font-size: 0.8em; 
+        color: #1a1a1a;
         text-decoration: none; 
         margin: 5px 0; 
+    }
+    .social-links a {
+        font-size: 0.8em; 
+    }
+
+    .social-links i {
+        font-size: 2.5em; 
     }
     .intro {
         margin-top: 0; 
